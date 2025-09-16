@@ -9,9 +9,9 @@ const enviarFormulario = ( ) =>
     const templateParams = {
         from_name: nome.value,
         from_email: email.value,
-        telefone: telefone.value,
-        email_secundario: emailSecundario.value || "Não informado",
-        message: ideiaTexto.value
+        from_telefone: telefone.value,
+        from_email_secundario: emailSecundario.value || "Não informado",
+        from_message: ideiaTexto.value
     }
 
     
