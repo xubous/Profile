@@ -1,182 +1,172 @@
-/* Smartphones */
-@media (max-width: 768px) 
-{
-    /* Header */
-    header 
-    {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 15px;
-        gap: 15px;
-    }
+/* ===================== RESPONSIVO PARA CELULARES ===================== */
+@media (max-width: 480px) {
 
-    .logo 
-    {
-        width: 40px;
-        height: 40px;
-    }
-
-    .icons-header ul 
-    {
+    /* HEADER */
+    header {
+        padding: 12px;
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
 
-    /* Títulos */
-    .main-title 
-    {
-        font-size: 1.5rem;
-        text-align: center;
-        margin-bottom: 15px;
+    .logo {
+        width: 30px;
+        height: 30px;
     }
 
-    /* Home */
-    .container-info 
-    {
-        flex-direction: column;
-        align-items: center;
-        gap: 25px;
-        text-align: center;
-        padding: 15px;
+    .icons-header ul {
+        gap: 12px;
+        justify-content: center;
     }
 
-    .info-container-info 
-    {
-        width: 100%;
-        max-width: 320px;
-        padding: 15px;
-        border-radius: 15px;
+    .icons-header ul li {
         font-size: 14px;
     }
 
-    .image-container-info img 
-    {
-        width: 100px;
-        height: 100px;
-    }
-
-    /* Technologies */
-    .container-technologies-with-illustration 
-    {
+    /* CONTAINERS PRINCIPAIS */
+    .main-container-info,
+    .container-info,
+    .projects-section,
+    .container-technologies-with-illustration,
+    .container-about-me {
+        display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         gap: 20px;
-        padding: 30px 15px;
-    }
-
-    .illustration img 
-    {
-        width: 80px;
-        height: 80px;
-    }
-
-    .tech-card 
-    {
-        flex: 0 0 90%;
-        max-width: 280px;
-        padding: 12px;
-        height: auto;
-        gap: 10px;
-    }
-
-    .carousel-track-container 
-    {
-        max-width: 100%;
-    }
-
-    /* Projects */
-    .projects-section 
-    {
-        padding: 30px 15px;
-    }
-
-    .projects-container 
-    {
-        flex-direction: column;
-        align-items: center;
-        gap: 25px;
-    }
-
-    .project-card 
-    {
+        padding: 20px 15px;
         width: 100%;
-        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    /* TÍTULOS */
+    .main-title {
+        font-size: 1.6rem;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    /* BLOCO DE INFORMAÇÕES */
+    .info-container-info {
+        width: 90%;
+        max-width: 340px;
         padding: 15px;
-        border-radius: 15px;
+        border-radius: 20px;
+        text-align: center;
     }
 
-    .project-info h3 
-    {
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-
-    .project-info p 
-    {
-        font-size: 13px;
-    }
-
-    .project-links 
-    {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    /* About Me */
-    .container-about-me 
-    {
-        flex-direction: column;
-        align-items: center;
-        gap: 25px;
-        padding: 30px 15px;
-    }
-
-    .title-info-container-about-me 
-    {
+    .h2-info {
         font-size: 18px;
     }
 
-    .descrition-info-container-about-me 
-    {
+    .p-info {
         font-size: 13px;
         line-height: 1.4;
     }
 
-    .form-container-about-me 
-    {
-        width: 100%;
-        max-width: 300px;
-        padding: 15px;
-        gap: 12px;
+    .image-container-info img {
+        width: 100px;
+        height: 100px;
     }
 
-    .row 
-    {
+    /* CARROSSEL */
+    .carousel-track-container {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .tech-card {
+        flex: 0 0 220px;
+        height: 150px;
+        padding: 12px;
+        gap: 10px;
+    }
+
+    .carousel-btn {
+        font-size: 18px;
+        padding: 5px 10px;
+        height: 35px;
+    }
+
+    /* PROJETOS */
+    .project-card {
+        width: 90%;
+        max-width: 320px;
+        min-height: 360px;
+        margin: 0 auto;
+    }
+
+    .project-info {
+        padding: 12px;
+    }
+
+    .project-info h3 {
+        font-size: 16px;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+
+    .project-info p {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .project-links {
+        gap: 12px;
+        justify-content: center;
+    }
+
+    /* FORMULÁRIO */
+    .form-container-about-me {
+        width: 90%;
+        max-width: 340px;
+        padding: 15px;
+        gap: 12px;
+        border-radius: 15px;
+    }
+
+    .row {
         flex-direction: column;
         gap: 10px;
     }
 
     .input-group input,
-    .input-group textarea 
-    {
+    .input-group textarea {
         font-size: 13px;
         padding: 8px;
         width: 100%;
     }
 
-    textarea 
-    {
-        min-height: 70px;
+    textarea {
+        min-height: 80px;
         font-size: 12px;
     }
 
-    /* Footer */
-    footer 
-    {
-        font-size: 12px;
+    /* CONTATO / ÍCONES */
+    .icons-contact-container-about-me {
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    .icons-contact-container-about-me li {
+        font-size: 22px;
+    }
+
+    .img-container-about-me {
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+        margin: 0 auto;
+    }
+
+    /* FOOTER */
+    footer {
         text-align: center;
+        font-size: 12px;
         padding: 12px;
+        width: 100%;
     }
 }
