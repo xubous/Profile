@@ -5,29 +5,36 @@ const emailSecundario = document.getElementById ( "email-sec" )
 const ideiaTexto = document.getElementById ( "about-problem" )
 const buttonForm = document.querySelector ( ".send-form-container-about-me" )
 
+( function ( ) {
+    emailjs.init ( "DwHqRsRHDTxUcEI-x" )
+} ) ( )
+
 buttonForm.addEventListener ( "click", ( ) => {
-    const objeto = {
-        nome: nome.value,
-        email: email.value,
-        telefone: telefone.value,
-        emailSecundario: emailSecundario.value || "",
-        ideia: ideiaTexto.value
+    if ( !nome.value || !email.value || !ideiaTexto.value ) {
+        alert ( "Por favor, preencha pelo menos os campos: Nome, Email e Ideia." )
+        return
     }
 
-    fetch ( "http://localhost:4567/submit", {
-        method: "Post",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify ( objeto )
-    } )
-    .then ( res => res.text ( ) )
-    .then ( data => console.log ( data ) )
-    .catch ( err => console.error ( err ) )
+    const templateParams = {
+        from_name: nome.value,
+        from_email: email.value,
+        telefone: telefone.value,
+        email_secundario: emailSecundario.value,
+        message: ideiaTexto.value
+    }
 
-    nome.value = ""
-    email.value = ""
-    telefone.value = ""
-    emailSecundario.value = ""
-    ideiaTexto.value = ""
+    emailjs.send ( "service_2wp1x6o", "template_misy95p", templateParams )
+        .then ( function ( response ) {
+            console.log ( "SUCESSO!", response.status, response.text )
+            alert ( "Mensagem enviada com sucesso! Entrarei em contato em breve." )
+            
+            nome.value = ""
+            email.value = ""
+            telefone.value = ""
+            emailSecundario.value = ""
+            ideiaTexto.value = ""
+        }, function ( error ) {
+            console.log ( "FALHA...", error )
+            alert ( "Erro ao enviar mensagem. Tente novamente ou entre em contato diretamente por um dos canais abaixo." )
+        } )
 } )
