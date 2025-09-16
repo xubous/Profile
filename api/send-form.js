@@ -1,13 +1,13 @@
-export default async function handler(req, res) {
-  if (req.method !== "POST") {
-    return res.status(405).json({ error: "Método não permitido" });
+export default async function handler ( req, res ) 
+{
+  if ( req.method !== "POST" ) 
+    {
+    return res.status ( 405 ).json ( { error: "Método não permitido" } );
   }
 
   const { nome, email, telefone, emailSecundario, mensagem } = req.body;
 
-  // Aqui você pode salvar no banco ou enviar e-mail
-  // Por enquanto, só vamos logar no console
-  console.log("Formulário recebido:", { nome, email, telefone, emailSecundario, mensagem });
+  console.log ( "Formulário recebido:", { nome, email, telefone, emailSecundario, mensagem } );
 
-  return res.status(200).json({ message: "Formulário recebido com sucesso!" });
+  return res.status ( 200 ).json ( { message: "Formulário recebido com sucesso!" } );
 }
