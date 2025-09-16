@@ -25,6 +25,8 @@ const enviarFormulario = ( ) =>
         from_message: ideiaTexto.value
     }
 
+    console.log(templateParams)
+
     emailjs.send ( "service_2wp1x6o", "template_misy95p", templateParams )
         .then ( response =>
         {
