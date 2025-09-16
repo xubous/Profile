@@ -44,5 +44,8 @@ window.onload = ( ) => {
             } )
     }
 
-    buttonForm.addEventListener ( "click", enviarFormulario )
+    buttonForm.addEventListener ( "click", ( e ) => {
+        e.preventDefault ( )
+        enviarFormulario ( ) 
+    } )
 }
