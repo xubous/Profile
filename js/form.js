@@ -15,7 +15,7 @@ const enviarFormulario = async () => {
     nome: nome.value,
     email: email.value,
     telefone: telefone.value,
-    emailSecundario: emailSecundario.value,
+    emailSecundario: emailSecundario.value || "null",
     mensagem: ideiaTexto.value
   };
 
