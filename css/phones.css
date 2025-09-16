@@ -1,94 +1,121 @@
 /* Smartphones */
 @media (max-width: 768px) 
 {
-
     /* Header */
     header 
     {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 15px;
         padding: 15px;
+        gap: 15px;
+    }
+
+    .logo 
+    {
+        width: 40px;
+        height: 40px;
     }
 
     .icons-header ul 
     {
         flex-direction: column;
-        gap: 15px;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* Títulos */
+    .main-title 
+    {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 15px;
     }
 
     /* Home */
     .container-info 
     {
         flex-direction: column;
-        gap: 40px;
+        align-items: center;
+        gap: 25px;
         text-align: center;
+        padding: 15px;
     }
 
     .info-container-info 
     {
-        width: 90%;
+        width: 100%;
         max-width: 320px;
-        height: auto;
-        padding: 20px;
-    }
-
-    .image-container-info 
-    {
-        margin: 0;
+        padding: 15px;
+        border-radius: 15px;
+        font-size: 14px;
     }
 
     .image-container-info img 
     {
-        width: 120px;
-        height: 120px;
-        margin: 0;
+        width: 100px;
+        height: 100px;
     }
 
     /* Technologies */
-    .content-technologies 
+    .container-technologies-with-illustration 
     {
         flex-direction: column;
+        align-items: center;
         gap: 20px;
+        padding: 30px 15px;
     }
 
-    .technology-carousel 
+    .illustration img 
     {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .carousel-track-container 
-    {
-        max-width: 100%;
-        padding: 0;
+        width: 80px;
+        height: 80px;
     }
 
     .tech-card 
     {
         flex: 0 0 90%;
-        max-width: 300px;
+        max-width: 280px;
+        padding: 12px;
+        height: auto;
+        gap: 10px;
+    }
+
+    .carousel-track-container 
+    {
+        max-width: 100%;
     }
 
     /* Projects */
+    .projects-section 
+    {
+        padding: 30px 15px;
+    }
+
     .projects-container 
     {
         flex-direction: column;
         align-items: center;
-        gap: 30px;
+        gap: 25px;
     }
 
     .project-card 
     {
-        width: 90%;
+        width: 100%;
         max-width: 320px;
-        height: auto;
+        padding: 15px;
+        border-radius: 15px;
     }
 
-    .project-img 
+    .project-info h3 
     {
-        height: 160px;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .project-info p 
+    {
+        font-size: 13px;
     }
 
     .project-links 
@@ -101,17 +128,55 @@
     .container-about-me 
     {
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        padding: 20px;
-        gap: 30px;
-        height: auto;
+        gap: 25px;
+        padding: 30px 15px;
     }
 
-    .info-container-about-me 
+    .title-info-container-about-me 
     {
-        margin: 0;
-        text-align: center;
+        font-size: 18px;
     }
 
+    .descrition-info-container-about-me 
+    {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .form-container-about-me 
+    {
+        width: 100%;
+        max-width: 300px;
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .row 
+    {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .input-group input,
+    .input-group textarea 
+    {
+        font-size: 13px;
+        padding: 8px;
+        width: 100%;
+    }
+
+    textarea 
+    {
+        min-height: 70px;
+        font-size: 12px;
+    }
+
+    /* Footer */
+    footer 
+    {
+        font-size: 12px;
+        text-align: center;
+        padding: 12px;
+    }
 }
