@@ -1,279 +1,117 @@
-/* ===================== MEDIA QUERIES ===================== */
+/* Smartphones */
+@media (max-width: 768px) 
+{
 
-/* Tablets */
-@media (max-width: 768px) {
-    .icons-header ul {
-        gap: 20px;
+    /* Header */
+    header 
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding: 15px;
     }
-    
-    .icons-header ul li {
-        font-size: 16px;
+
+    .icons-header ul 
+    {
+        flex-direction: column;
+        gap: 15px;
     }
-    
-    .main-title {
-        font-size: 2rem;
+
+    /* Home */
+    .container-info 
+    {
+        flex-direction: column;
+        gap: 40px;
         text-align: center;
     }
-    
-    .container-info {
+
+    .info-container-info 
+    {
+        width: 90%;
+        max-width: 320px;
+        height: auto;
+        padding: 20px;
+    }
+
+    .image-container-info 
+    {
+        margin: 0;
+    }
+
+    .image-container-info img 
+    {
+        width: 120px;
+        height: 120px;
+        margin: 0;
+    }
+
+    /* Technologies */
+    .content-technologies 
+    {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .technology-carousel 
+    {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .carousel-track-container 
+    {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .tech-card 
+    {
+        flex: 0 0 90%;
+        max-width: 300px;
+    }
+
+    /* Projects */
+    .projects-container 
+    {
         flex-direction: column;
         align-items: center;
         gap: 30px;
     }
-    
-    .info-container-info {
-        max-width: 100%;
-        padding: 15px;
-    }
-    
-    .carousel-track-container {
-        max-width: 100%;
-    }
-    
-    .tech-card {
-        flex: 0 0 100%;
-        max-width: 400px;
+
+    .project-card 
+    {
+        width: 90%;
+        max-width: 320px;
         height: auto;
     }
-}
 
-/* Smartphones */
-@media (max-width: 480px) {
-    header {
-        padding: 10px 15px;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
+    .project-img 
+    {
+        height: 160px;
     }
-    
-    .logo {
-        width: 40px;
-        height: 40px;
-    }
-    
-    .icons-header ul {
+
+    .project-links 
+    {
         flex-direction: column;
         gap: 10px;
+    }
+
+    /* About Me */
+    .container-about-me 
+    {
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-    }
-    
-    .icons-header ul li {
-        font-size: 16px;
-    }
-    
-    .main-container-info {
         padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 25px;
-    }
-    
-    .main-title {
-        font-size: 1.6rem;
-        text-align: center;
-        padding-bottom: 10px;
-    }
-    
-    .container-info {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-    
-    .info-container-info {
-        width: 100%;
-        max-width: 350px;
-        min-height: auto;
-        gap: 15px;
-        padding: 15px;
-        border-radius: 20px;
-    }
-    
-    .h2-info {
-        font-size: 18px;
-        text-align: center;
-    }
-    
-    .p-info {
-        font-size: 14px;
-        text-align: center;
-    }
-    
-    .image-container-info img {
-        width: 100px;
-        height: 100px;
-    }
-    
-    .next-area {
-        position: static;
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
-    }
-    .next-area img {
-        width: 140px;
+        gap: 30px;
         height: auto;
     }
-    
-    .container-technologies-with-illustration {
-        flex-direction: column;
-        align-items: center;
-        padding: 40px 15px;
-        gap: 20px;
-    }
-    
-    .illustration img {
-        width: 80px;
-        height: 80px;
-    }
-    
-    .info-card {
-        width: 100%;
-        padding: 15px;
-        gap: 15px;
-    }
-    
-    .carousel-track-container {
-        max-width: 100%;
-    }
-    
-    .tech-card {
-        flex: 0 0 100%;
-        height: auto;
-        padding: 12px;
-        gap: 10px;
-    }
-    
-    .carousel-btn {
-        font-size: 18px;
-        padding: 6px 10px;
-        height: 36px;
-    }
-    
-    .projects-section {
-        padding: 40px 15px;
-    }
-    
-    .projects-section .main-title {
-        font-size: 1.6rem;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-    
-    .project-card {
-        width: 100%;
-        max-width: 320px;
-        min-height: auto;
-    }
-    
-    .project-info {
-        padding: 12px;
-        text-align: center;
-    }
-    
-    .project-info h3 {
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-    
-    .project-info p {
-        font-size: 13px;
-    }
-    
-    .project-links {
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 15px;
-    }
-    
-    .container-about-me {
-        flex-direction: column;
-        padding: 40px 15px 20px;
-        gap: 20px;
-        text-align: center;
-    }
-    
-    .title-info-container-about-me {
-        font-size: 18px;
-    }
-    
-    .descrition-info-container-about-me {
-        font-size: 13px;
-    }
-    
-    .form-container-about-me {
-        width: 100%;
-        max-width: 320px;
-        padding: 12px;
-        gap: 12px;
-    }
-    
-    .row {
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    .input-group input,
-    .input-group textarea {
-        font-size: 13px;
-        padding: 8px;
-        width: 100%;
-    }
-    
-    textarea {
-        min-height: 70px;
-        font-size: 12px;
-    }
-    
-    .icons-contact-container-about-me {
-        justify-content: center;
-        gap: 15px;
-    }
-    
-    .icons-contact-container-about-me li {
-        font-size: 22px;
-    }
-    
-    .img-container-about-me {
-        width: 80px;
-        height: 80px;
-        border-radius: 20px;
-    }
-    
-    footer {
-        font-size: 11px;
-        padding: 12px;
-        text-align: center;
-    }
-}
 
-/* Smartphones muito pequenos */
-@media (max-width: 360px) {
-    .main-title {
-        font-size: 1.3rem;
+    .info-container-about-me 
+    {
+        margin: 0;
+        text-align: center;
     }
-    
-    .info-container-info {
-        max-width: 100%;
-        padding: 10px;
-    }
-    
-    .carousel-track-container {
-        max-width: 100%;
-    }
-    
-    .tech-card {
-        flex: 0 0 100%;
-        height: auto;
-    }
-    
-    .project-card {
-        width: 100%;
-    }
-    
-    .form-container-about-me {
-        max-width: 100%;
-        padding: 10px;
-    }
+
 }
