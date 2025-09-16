@@ -7,14 +7,15 @@ const enviarFormulario = ( ) =>
     }
 
     const templateParams = {
-        from_name: nome.value,
-        from_email: email.value,
-        from_telefone: telefone.value,
-        from_email_secundario: emailSecundario.value || "Não informado",
-        from_message: ideiaTexto.value
+        name: nome.value,
+        email: email.value,
+        phone: telefone.value,
+        secondary_email: emailSecundario.value || "Não informado",
+        message: ideiaTexto.value
     }
 
-    
+    console.log("Dados sendo enviados:", templateParams);
+
     emailjs.send ( "service_2wp1x6o", "template_misy95p", templateParams )
         .then ( response =>
         {
