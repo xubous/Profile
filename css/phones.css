@@ -1,0 +1,250 @@
+/* ===================== MEDIA QUERIES ===================== */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .icons-header ul {
+        gap: 20px;
+    }
+    
+    .icons-header ul li {
+        font-size: 16px;
+    }
+    
+    .main-title {
+        font-size: 2rem;
+    }
+    
+    .container-info {
+        gap: 30px;
+    }
+    
+    .info-container-info {
+        max-width: 400px;
+        padding: 15px;
+    }
+    
+    .carousel-track-container {
+        max-width: 280px;
+    }
+    
+    .tech-card {
+        flex: 0 0 260px;
+        height: 180px;
+    }
+}
+
+/* Smartphones */
+@media (max-width: 480px) {
+    header {
+        padding: 10px 15px;
+    }
+    
+    .logo {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .icons-header ul {
+        gap: 15px;
+    }
+    
+    .icons-header ul li {
+        font-size: 14px;
+    }
+    
+    .main-container-info {
+        padding: 15px;
+        gap: 20px;
+    }
+    
+    .main-title {
+        font-size: 1.8rem;
+        padding-bottom: 20px;
+    }
+    
+    .container-info {
+        gap: 20px;
+    }
+    
+    .info-container-info {
+        max-width: 350px;
+        min-height: 300px;
+        gap: 20px;
+        padding: 15px;
+        border-radius: 40px;
+    }
+    
+    .h2-info {
+        font-size: 18px;
+    }
+    
+    .p-info {
+        font-size: 13px;
+    }
+    
+    .image-container-info img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .next-area img {
+        width: 150px;
+        height: 40px;
+    }
+    
+    .next-area {
+        bottom: 50px;
+    }
+    
+    .container-technologies-with-illustration {
+        padding: 60px 15px;
+        gap: 30px;
+    }
+    
+    .illustration img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .info-card {
+        padding: 15px;
+        gap: 15px;
+    }
+    
+    .carousel-track-container {
+        max-width: 250px;
+    }
+    
+    .tech-card {
+        flex: 0 0 230px;
+        height: 160px;
+        padding: 10px;
+        gap: 12px;
+    }
+    
+    .carousel-btn {
+        font-size: 20px;
+        padding: 6px 12px;
+        height: 40px;
+    }
+    
+    .projects-section {
+        padding: 60px 15px;
+    }
+    
+    .projects-section .main-title {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+    
+    .project-card {
+        max-width: 320px;
+        min-height: 400px;
+    }
+    
+    .project-info {
+        padding: 15px;
+    }
+    
+    .project-info h3 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    
+    .project-info p {
+        font-size: 13px;
+    }
+    
+    .project-links {
+        gap: 15px;
+        margin-top: 15px;
+    }
+    
+    .container-about-me {
+        padding: 60px 15px 40px;
+        gap: 30px;
+    }
+    
+    .title-info-container-about-me {
+        font-size: 18px;
+    }
+    
+    .descrition-info-container-about-me {
+        font-size: 13px;
+    }
+    
+    .form-container-about-me {
+        max-width: 350px;
+        padding: 15px;
+        gap: 15px;
+    }
+    
+    .row {
+        gap: 12px;
+    }
+    
+    .input-group input,
+    .input-group textarea {
+        font-size: 13px;
+        padding: 8px;
+    }
+    
+    textarea {
+        min-height: 70px;
+        font-size: 11px;
+        padding: 8px;
+    }
+    
+    .icons-contact-container-about-me {
+        gap: 20px;
+    }
+    
+    .icons-contact-container-about-me li {
+        font-size: 24px;
+    }
+    
+    .img-container-about-me {
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+    }
+    
+    footer {
+        font-size: 11px;
+        padding: 15px;
+    }
+}
+
+/* Smartphones muito pequenos */
+@media (max-width: 360px) {
+    .main-title {
+        font-size: 1.5rem;
+    }
+    
+    .info-container-info {
+        max-width: 300px;
+        padding: 12px;
+    }
+    
+    .carousel-track-container {
+        max-width: 200px;
+    }
+    
+    .tech-card {
+        flex: 0 0 180px;
+        height: 140px;
+    }
+    
+    .project-card {
+        max-width: 280px;
+    }
+    
+    .form-container-about-me {
+        max-width: 300px;
+        padding: 12px;
+    }
+    
+    .icons-contact-container-about-me {
+        gap: 15px;
+    }
+}
