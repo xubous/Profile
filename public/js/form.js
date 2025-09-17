@@ -1,24 +1,21 @@
 window.onload = () => {
-    const nome = document.getElementById("nome");
-    const email = document.getElementById("email");
-    const telefone = document.getElementById("phone");
-    const emailSecundario = document.getElementById("email-sec");
-    const ideiaTexto = document.getElementById("about-problem");
-    const buttonForm = document.querySelector(".send-form-container-about-me");
+    const form = document.getElementById("meuForm");
 
-    const enviarFormulario = async () => {
-        if (!nome.value || !email.value || !ideiaTexto.value) {
-            alert("Por favor, preencha pelo menos os campos: Nome, Email e Ideia.");
+    form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const nome = document.getElementById("nome").value;
+        const email = document.getElementById("email").value;
+        const telefone = document.getElementById("phone").value;
+        const emailSecundario = document.getElementById("email-sec").value;
+        const ideia = document.getElementById("about-problem").value;
+
+        if (!nome || !email || !ideia) {
+            alert("Por favor, preencha pelo menos Nome, Email e Ideia.");
             return;
         }
 
-        const formData = {
-            nome: nome.value,
-            email: email.value,
-            telefone: telefone.value,
-            emailSecundario: emailSecundario.value,
-            ideia: ideiaTexto.value
-        };
+        const formData = { nome, email, telefone, emailSecundario, ideia };
 
         try {
             const response = await fetch("/api/contact", {
@@ -31,22 +28,13 @@ window.onload = () => {
 
             if (response.ok) {
                 alert(data.message);
-                nome.value = "";
-                email.value = "";
-                telefone.value = "";
-                emailSecundario.value = "";
-                ideiaTexto.value = "";
+                form.reset();
             } else {
                 alert(data.message || "Erro ao enviar formulário.");
             }
-        } catch (error) {
-            console.error("Erro ao enviar formulário:", error);
+        } catch (err) {
+            console.error("Erro ao enviar formulário:", err);
             alert("Erro ao enviar formulário. Veja o console.");
         }
-    };
-
-    buttonForm.addEventListener("click", (e) => {
-        e.preventDefault();
-        enviarFormulario();
     });
 };
