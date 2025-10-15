@@ -22,20 +22,21 @@ function updateCarouselPosition ( )
 nextButton.addEventListener ( "click", ( ) => {
     currentIndex ++
 
-    if ( currentIndex > totalCards - visibleCards )
+    if ( currentIndex > totalCards - 1 ) 
     {
         currentIndex = 0
     }
 
     updateCarouselPosition ( )
-} )
+})
+
 
 prevButton.addEventListener ( "click", ( ) => {
     currentIndex --
 
     if ( currentIndex < 0 )
     {
-        currentIndex = totalCards - visibleCards
+        currentIndex = totalCards - 1
     }
 
     updateCarouselPosition ( )
