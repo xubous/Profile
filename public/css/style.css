@@ -1130,7 +1130,6 @@ footer {
     /* About Me Notebooks */
     .container-about-me {
         display: flex;
-        justify-content: space-between;
         align-items: center;
         height: 100vh;
         background-image: url("../images/13.gif");
@@ -1138,17 +1137,17 @@ footer {
         background-size: cover;
         background-position: center center;
         flex-wrap: wrap;
-        padding: 40px;
-        gap: 40px;
     }
 
     .info-container-about-me {
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
         gap: 15px;
-        order: 1;
+        margin-left: 50px;
+    }
+
+    .image-container-about-me {
+        margin-right: 50px;
     }
 
     .title-info-container-about-me {
