@@ -1,299 +1,499 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gabriel Carvalho - Desenvolvedor Back End</title>
-  <link rel="icon" href="./images/code-solid-full.svg">
-  <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gabriel Carvalho — Back-End Developer & Security Enthusiast. Desenvolvedor focado em sistemas robustos, APIs, banco de dados e segurança da informação.">
+  <meta name="author" content="Gabriel Carvalho">
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="Gabriel Carvalho — Back-End & Security">
+  <meta property="og:description" content="Desenvolvedor Back-End & Security Enthusiast. Estagiário na Prodabel · PBH.">
+  <meta property="og:type"        content="website">
+
+  <title>Gabriel Carvalho</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <i class="fa-solid fa-g"></i>
-    </div>
-    <div class="icons-header">
-      <ul>
-        <li class="main-house"><i class="fa-solid fa-house"></i></li>
-        <li class="main-tec"><i class="fa-solid fa-microchip"></i></li>
-        <li class="main-projects"><i class="fa-solid fa-folder"></i></li>
-        <li class="main-phone"><i class="fa-solid fa-phone"></i></li>
-      </ul>
-    </div>
-  </header>
 
-  <div class="main-container-info">
-    <img src="./images/06.gif" class="bg-img" />
+<!-- CURSOR -->
+<div id="cursor" aria-hidden="true"></div>
 
-    <div class="container-info">
-      <div class="info-container-info">
-        <h1 class="h1-info">Hello, <span class="span-title-info-init">I'm Gabr</span><span class="span-title-info-end">iel <></span></h1>
-        <h2 class="h2-info">Desenvolvedor Back-End</h2>
-        <p class="p-info">
-          Especialista em <span>C ++</span> e <span>Java</span> com foco em desenvolvimento <span class="span-backend"> Back-End</span>, transformando desafios em soluções robustas através de código de excelência.
-        </p>
-      </div>
-
-      <div class="image-container-info">
-        <img src="./images/04.gif" alt="" />
-        <p class="title-image-container">
-          <span class="span-title-init">Xub</span><span class="span-title-end">ous</span>
-        </p>
-        <p class="see-more">
-          Veja Mais -> 
-          <a href="./Currículo.pdf" download target="_blank">
-            <i class="fa-solid fa-file-pdf"></i>
-          </a>
-          <a href="https://github.com/xubous" target="_blank">
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </p>
-      </div>
+<!-- =====================
+     NAVIGATION
+     ===================== -->
+<nav>
+  <div class="nav">
+    <div class="logo">gc<span>.</span></div>
+    <div class="links">
+      <a href="#stack">Stack</a>
+      <a href="#trajetoria">Trajetória</a>
+      <a href="#projects">Projetos</a>
+      <a href="#contact">Contato</a>
     </div>
-    <button class="next-area">
-      <img src="./images/button.png">
-    </button>
   </div>
+</nav>
 
-  <div class="container-technologies-with-illustration">
-    <h1 class="main-title"><u>Minhas <span>Tec</span>nologias</u></h1>
+<!-- =====================
+     HERO
+     ===================== -->
+<div class="hero">
 
-    <div class="content-technologies">
-      <div class="illustration">
-        <img src="./images/05.gif" alt="Ilustração de tecnologias" />
-      </div>
+  <!-- Left: heading + bio -->
+  <div class="hero-left reveal">
+    <div class="label">DISPONÍVEL • ESTÁGIO / JÚNIOR</div>
 
-      <div class="info-card">
-        <p>
-          Essas são as <span>tecnologias</span> que eu uso para construir <span>soluções</span> robustas e escaláveis, tanto no <span>front-end</span> quanto no <span>back-end</span>.
-        </p>
-        <p>
-          Com experiência em diversas <span>linguagens</span> e <span>ferramentas</span>, consigo entregar projetos <span>completos</span> e <span>eficientes</span>.
-        </p>
-        <div class="highlight-section">
-          <h3>Por que essas tecnologias?</h3>
-          <p>
-            Elas oferecem a <span>flexibilidade</span>, <span>performance</span> e <span>comunidade</span> necessárias para manter meus projetos <span>atualizados</span> e com <span>qualidade</span>.
-          </p>
-        </div>
-      </div>
+    <h1>
+      <span class="name-line" id="typedLine1"></span>
+      <span class="name-line" id="typedLine2"></span>
+      <span class="name-line dim">Back-End &amp; Security.</span>
+    </h1>
 
-      <div class="technology-carousel">
-        <button class="carousel-btn prev-btn">&#10094;</button>
-        <div class="carousel-track-container">
-          <ul class="carousel-track">
-            <li class="tech-card">
-              <i class="fa-brands fa-c fa-3x"></i>
-              <h3>C/C++</h3>
-            </li>
-            <li class="tech-card">
-              <i class="fa-brands fa-java fa-3x"></i>
-              <h3>Java</h3>
-            </li>
-            <li class="tech-card">
-              <i class="fa-brands fa-python fa-3x"></i>
-              <h3>Python</h3>
-            </li>
-            <li class="tech-card">
-              <i class="fa-brands fa-html5 fa-3x"></i>
-              <h3>HTML</h3>
-            </li>
-            <li class="tech-card">
-              <i class="fa-brands fa-css3-alt fa-3x"></i>
-              <h3>CSS</h3>
-            </li>
-            <li class="tech-card">
-              <i class="fa-brands fa-js fa-3x"></i>
-              <h3>JavaScript</h3>
-            </li>
-            <li class="tech-card">
-              <i class="fa-brands fa-react fa-3x"></i>
-              <h3>React</h3>
-            </li>
-            <li class="tech-card">
-              <i class="fa-solid fa-wind fa-3x"></i>
-              <h3>Tailwind</h3>
-            </li>
-            <li class="tech-card">
-              <i class="fa-solid fa-database fa-3x"></i>
-              <h3>PostgreSQL</h3>
-            </li>
-            <li class="tech-card">
-              <i class="fa-brands fa-vimeo-v fa-3x"></i>
-              <h3>Vercel</h3>
-            </li>
-            <li class="tech-card">
-              <i class="fa-solid fa-server fa-3x"></i>
-              <h3>Render</h3>
-            </li>
-            <li class="tech-card">
-              <i class="fa-brands fa-neos fa-3x"></i>
-              <h3>Neon</h3>
-            </li>
-            <li class="tech-card">
-              <i class="fa-brands fa-linux fa-3x"></i>
-              <h3>Linux</h3>
-            </li>
-            <li class="tech-card">
-              <i class="fa-brands fa-windows fa-3x"></i>
-              <h3>Windows</h3>
-            </li>
-          </ul>
-        </div>
-        <button class="carousel-btn next-btn">&#10095;</button>
-      </div>
+    <p>
+      Desenvolvedor focado em sistemas robustos, APIs, banco de dados e segurança da informação.
+      Atualmente estagiando na Prodabel&nbsp;·&nbsp;PBH na área de segurança da informação.
+    </p>
+
+    <div class="tags">
+      <div class="tag">Belo Horizonte</div>
+      <div class="tag">Remoto</div>
+      <div class="tag">C++</div>
+      <div class="tag">Java</div>
+      <div class="tag">Python</div>
+      <div class="tag">Security</div>
     </div>
   </div>
 
-  <div class="projects-section">
-  <h1 class="main-title"><u>Meus <span>Proj</span>etos</u></h1>
+  <!-- Right: profile card -->
+  <div class="hero-right reveal">
+    <div class="profile-block">
 
-  <div class="projects-container">
-
-    <div class="project-card">
-      <img src="./images/Glow Black And White GIF by xponentialdesign.gif" alt="Projeto 1" class="project-img">
-      <div class="project-info">
-        <h3>FioVital - Monitoramento Online da Saúde</h3>
-        <p>Aplicação integrada com arduíno para monitorar os batimentos cardíacos de uma pessoa facilitando o acompanhamento.</p>
-        <div class="project-links">
-          <a href="https://fiovital.vercel.app/" target="_blank">
-            <i class="fa-solid fa-heart">
-              Visite
-            </i>
-          </a>
-          <a href="https://github.com/xubous/FioVital#" target="_blank">
-            <i class="fa-brands fa-github"></i> Código
-          </a>
+      <div class="profile-header">
+        <div class="profile-header-left">
+          <div class="avatar">
+            <img
+              src="https://media.giphy.com/media/3NtY188QaxDdC/giphy.gif"
+              alt="Gabriel Carvalho avatar"
+              onerror="this.onerror=null; this.parentElement.innerHTML='<span style=\'font-family:var(--display);font-size:26px;font-weight:700;color:#fff\'>GC</span>'"
+            >
+          </div>
+          <div class="profile-info">
+            <strong>Gabriel Carvalho</strong>
+            <span class="profile-subtitle">Back-End Developer &amp; Security Enthusiast</span>
+            <div class="profile-status">
+              <div class="dot-green" aria-hidden="true"></div>
+              <span>Disponível para oportunidades</span>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="project-card">
-      <img src="./images/08.gif" alt="Projeto 2" class="project-img">
-      <div class="project-info">
-        <h3>NetGuard - Anti Ataques Cibernéticos</h3>
-        <p>Se proteja de ataques que podem ferir a sua máquina, se informe e compartilhe.</p>
-        <div class="project-links">
-          <a href="https://icei-puc-minas-pmgcc-ti.github.io/ti-1-pmg-cc-m-20241-g1-ataques-ciberneticos-1/codigo/index.html" target="_blank">
-            <i class="fa-solid fa-ethernet">
-              Visite
-            </i>
-          </a>
-          <a href="https://github.com/xubous/Array-Utilities-in-Cpp?tab=readme-ov-file#array-utilities-c" target="_blank">
-            <i class="fa-brands fa-github"></i> Código
-          </a>
-        </div>
+      <div class="profile-links">
+        <a href="https://github.com/xubous" target="_blank" rel="noopener noreferrer" class="plink">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+          <strong>GitHub</strong>
+          <small>xubous</small>
+        </a>
+        <a href="./Currículo.pdf" target="_blank" rel="noopener noreferrer" class="plink">
+          <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+          <strong>Currículo</strong>
+          <small>PDF</small>
+        </a>
+        <a href="https://linkedin.com/in/xubous" target="_blank" rel="noopener noreferrer" class="plink">
+          <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+          <strong>LinkedIn</strong>
+          <small>/in/xubous</small>
+        </a>
+        <a href="https://wa.me/5531990712368" target="_blank" rel="noopener noreferrer" class="plink">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+          <strong>WhatsApp</strong>
+          <small>Mensagem</small>
+        </a>
+        <a href="mailto:gcs232005@gmail.com" class="plink">
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          <strong>Email</strong>
+          <small>Gmail</small>
+        </a>
       </div>
-    </div>
 
-    <div class="project-card">
-      <img src="./images/09.gif" alt="Projeto 3" class="project-img">
-      <div class="project-info">
-        <h3>Automatizador de Fluxo Git</h3>
-        <p>Script Python que automatiza fluxo de trabalho Git com menu interativo para commits, push e pull.</p>
-        <div class="project-links">
-          <a href="https://github.com/xubous/Git-Automation-Script/archive/refs/heads/main.zip" >
-            <i class="fa-solid fa-download"> Download</i>
-          </a>
-          <a href="https://github.com/xubous/Git-Automation-Script" target="_blank">
-            <i class="fa-brands fa-github"></i> Código
-          </a>
-        </div>
-      </div>
     </div>
-
-    <div class="project-card">
-      <img src="./images/11.gif" alt="Projeto 4" class="project-img">
-      <div class="project-info">
-        <h3>Jogo de Adivinhação de Frutas</h3>
-        <p>Jogo interativo em C para adivinhar frutas revelando letras, com banco de palavras e interface amigável.</p>
-        <div class="project-links">
-          <a href="https://github.com/xubous/Fruit-Guessing-Game-in-C" target="_blank">
-            <i class="fa-brands fa-github"></i> Código
-          </a>
-        </div>
-      </div>
-    </div>
-
   </div>
+
 </div>
 
+<!-- =====================
+     STACK
+     ===================== -->
+<section id="stack">
+  <div class="wrap">
 
-  <div class="container-about-me">
-    <div class="info-container-about-me">
-      <h1 class="title-info-container-about-me"><u>Compartilhe Sua <span class="span-idea">Ideia</span> Comigo</u></h1>
-      <p class="descrition-info-container-about-me">
-        Sua ideia <span>inovadora</span> merece ser <span>ouvida</span>! <br />Vamos juntos criar algo <span>extraordinário</span>!
-      </p>
-
-      <form class="form-container-about-me" action="https://formspree.io/f/xeolbkaq" method="POST">
-        <div class="row">
-          <div class="input-group">
-            <label for="nome">Nome :</label>
-            <input type="text" name="nome" id="nome" required />
-          </div>
-          <div class="input-group">
-            <label for="email">Email :</label>
-            <input type="email" name="email" id="email" required />
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="input-group">
-            <label for="phone">Telefone :</label>
-            <input type="text" name="phone" id="phone" />
-          </div>
-          <div class="input-group">
-            <label for="email-sec">Email Secundário (Opcional) :</label>
-            <input type="email" name="email-sec" id="email-sec" />
-          </div>
-        </div>
-
-        <div class="box-about-problem">
-          <label for="about-problem">Ideia :</label>
-          <textarea name="about-problem" id="about-problem"></textarea>
-        </div>
-
-        <button type="submit" class="send-form-container-about-me">Enviar</button>
-      </form>
+    <div class="top reveal">
+      <div>
+        <small>STACK TÉCNICA</small>
+        <h2>Ferramentas que uso.</h2>
+      </div>
     </div>
 
-    <div class="image-container-about-me">
-      <h2 class="title-image-container-about-me">Entre Em <span>Contato</span> Diretamente Comigo :</h2>
-      <div class="contact-content">
-        <ul class="icons-contact-container-about-me">
-          <li><a href="https://wa.me/31990712368" target="_blank"> <i class="fa-brands fa-whatsapp"></i> </a>  </li>
-          <li><a href="https://www.instagram.com/xubous_/" target="_blank"> <i class="fa-brands fa-instagram"></i> </a>  </li>
-          <li><a href="https://github.com/xubous" target="_blank"> <i class="fa-brands fa-github"></i> </a>  </li>
-          <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=gcs232005@gmail.com" target="_blank"> <i class="fa-solid fa-envelope"></i> </a>  </li>
-          <li><a href="https://www.linkedin.com/in/xubous/" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>  </li>
-        </ul>
+    <div class="stack-grid reveal-group">
+
+      <!-- Languages -->
+      <div class="stack-card">
+        <div class="stack-card-icon blue"><i class="fa-solid fa-terminal" aria-hidden="true"></i></div>
+        <h3>Linguagens</h3>
+        <p>CORE LANGUAGES</p>
+        <div class="skill-list">
+          <div class="skill-item">
+            <span class="skill-name">C / C++</span>
+            <div class="skill-bar"><div class="skill-fill" data-w="0.88"></div></div>
+            <span class="skill-pct">88%</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Java</span>
+            <div class="skill-bar"><div class="skill-fill" data-w="0.82"></div></div>
+            <span class="skill-pct">82%</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Python</span>
+            <div class="skill-bar"><div class="skill-fill" data-w="0.80"></div></div>
+            <span class="skill-pct">80%</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">JavaScript</span>
+            <div class="skill-bar"><div class="skill-fill" data-w="0.65"></div></div>
+            <span class="skill-pct">65%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Back-End -->
+      <div class="stack-card">
+        <div class="stack-card-icon orange"><i class="fa-solid fa-server" aria-hidden="true"></i></div>
+        <h3>Back-End</h3>
+        <p>INFRAESTRUTURA &amp; DADOS</p>
+        <div class="skill-list">
+          <div class="skill-item">
+            <span class="skill-name">REST API</span>
+            <div class="skill-bar"><div class="skill-fill orange" data-w="0.85"></div></div>
+            <span class="skill-pct">85%</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">PostgreSQL</span>
+            <div class="skill-bar"><div class="skill-fill orange" data-w="0.78"></div></div>
+            <span class="skill-pct">78%</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Linux</span>
+            <div class="skill-bar"><div class="skill-fill orange" data-w="0.75"></div></div>
+            <span class="skill-pct">75%</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Git</span>
+            <div class="skill-bar"><div class="skill-fill orange" data-w="0.90"></div></div>
+            <span class="skill-pct">90%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Security -->
+      <div class="stack-card">
+        <div class="stack-card-icon green"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+        <h3>Segurança</h3>
+        <p>CYBERSECURITY &amp; REDES</p>
+        <div class="skill-list">
+          <div class="skill-item">
+            <span class="skill-name">Redes</span>
+            <div class="skill-bar"><div class="skill-fill green" data-w="0.65"></div></div>
+            <span class="skill-pct">65%</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Linux</span>
+            <div class="skill-bar"><div class="skill-fill green" data-w="0.70"></div></div>
+            <span class="skill-pct">70%</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Firewall</span>
+            <div class="skill-bar"><div class="skill-fill green" data-w="0.55"></div></div>
+            <span class="skill-pct">55%</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">LGPD</span>
+            <div class="skill-bar"><div class="skill-fill green" data-w="0.60"></div></div>
+            <span class="skill-pct">60%</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =====================
+     TRAJECTORY
+     ===================== -->
+<section id="trajetoria">
+  <div class="wrap">
+
+    <div class="top reveal">
+      <div>
+        <small>TRAJETÓRIA</small>
+        <h2>Como cheguei até aqui.</h2>
+      </div>
+    </div>
+
+    <div class="traj-grid">
+      <div class="timeline reveal">
+
+        <div class="titem active">
+          <div class="tdate">INÍCIO DE 2024</div>
+          <div class="ttitle">Primeiros passos com Front-End</div>
+          <p class="tdesc">Comecei pela parte mais visual da web — HTML, CSS e JavaScript. Aprendi a construir layouts, trabalhar com responsividade e entender como um navegador processa páginas. Foi o ponto de partida que me fez querer ir mais fundo.</p>
+          <span class="ttag">HTML</span>
+          <span class="ttag">CSS</span>
+          <span class="ttag">JavaScript</span>
+        </div>
+
+        <div class="titem active">
+          <div class="tdate">MEADOS DE 2024</div>
+          <div class="ttitle">A virada: Back-End</div>
+          <p class="tdesc">O front me interessou por um tempo, mas quando comecei a entender o que acontecia do outro lado — no servidor — que realmente me apaixonei. APIs, banco de dados, fluxo de requisições. Mudei o foco e não parei mais.</p>
+          <span class="ttag hl">APIs REST</span>
+          <span class="ttag hl">PostgreSQL</span>
+          <span class="ttag hl">Java</span>
+          <span class="ttag hl">Python</span>
+        </div>
+
+        <div class="titem active">
+          <div class="tdate">FINAL DE 2024</div>
+          <div class="ttitle">Segurança da Informação</div>
+          <p class="tdesc">Comecei a estudar segurança em paralelo ao back-end. Redes, criptografia, vulnerabilidades e proteção de dados. Quanto mais entendia como sistemas funcionam, mais queria saber como eles falham — e como protegê-los.</p>
+          <span class="ttag">Redes</span>
+          <span class="ttag">Criptografia</span>
+          <span class="ttag">LGPD</span>
+          <span class="ttag">Cyber</span>
+        </div>
+
+        <div class="titem current">
+          <div class="tdate">2025 – PRESENTE</div>
+          <div class="ttitle">Estágio na Prodabel · PBH</div>
+          <p class="tdesc">Hoje trabalho na Prodabel, a empresa de tecnologia da Prefeitura de Belo Horizonte, atuando na área de segurança da informação. É onde estou colocando tudo em prática — em ambiente real, com responsabilidade real.</p>
+          <span class="ttag gl">Prodabel</span>
+          <span class="ttag gl">PBH</span>
+          <span class="ttag gl">Seg. da Informação</span>
+          <span class="ttag gl">Corporativo</span>
+        </div>
+
       </div>
     </div>
   </div>
+</section>
 
-  <footer>
-    <p>Gabriel Carvalho de Souza @ Todos os direitos reservados 2025</p>
-  </footer>
+<!-- =====================
+     PROJECTS
+     ===================== -->
+<section id="projects">
+  <div class="wrap">
 
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script src="./js/button-next-page.js"></script>
-  <script src="./js/buttons-header.js"></script>
-  <script src="./js/carousel.js"></script>
-  <script>
-      const form = document.querySelector('.form-container-about-me');
+    <div class="top reveal">
+      <div>
+        <small>PROJETOS</small>
+        <h2>Projetos.</h2>
+      </div>
+    </div>
 
-      form.addEventListener ( "submit", function ( event ) 
-      {
-        setTimeout ( ( ) => {
-          form.reset ( );
-        }, 200 )
-      } )
-</script>
+    <div class="projects-grid reveal-group">
+
+      <div class="project">
+        <div class="project-top">
+          <div class="project-icon green"><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i></div>
+          <span class="project-lang">Arduino · REST API</span>
+        </div>
+        <h3>FioVital</h3>
+        <p>Sistema integrado com Arduino para monitoramento cardíaco em tempo real. Conta com API REST para coleta e histórico de dados, interface web para visualização de batimentos e armazenamento em banco de dados.</p>
+        <div class="project-tech">
+          <span class="tech-tag">Arduino</span>
+          <span class="tech-tag">REST API</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">PostgreSQL</span>
+        </div>
+        <div class="buttons">
+          <a class="btn primary" href="https://fiovital.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>Ver projeto
+          </a>
+          <a class="btn" href="https://github.com/xubous/FioVital" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>Ver no GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-top">
+          <div class="project-icon green"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+          <span class="project-lang">Security · Web</span>
+        </div>
+        <h3>NetGuard</h3>
+        <p>Plataforma educacional sobre segurança digital e conscientização contra ataques cibernéticos. Aborda temas como phishing, engenharia social, boas práticas de senhas e proteção de dados pessoais.</p>
+        <div class="project-tech">
+          <span class="tech-tag">Cybersecurity</span>
+          <span class="tech-tag">HTML/CSS</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">Awareness</span>
+        </div>
+        <div class="buttons">
+          <a class="btn primary" href="https://icei-puc-minas-pmgcc-ti.github.io/ti-1-pmg-cc-m-20241-g1-ataques-ciberneticos-1/codigo/index.html" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>Ver projeto
+          </a>
+          <a class="btn" href="https://github.com/xubous/NetGuard" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>Ver no GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-top">
+          <div class="project-icon orange"><i class="fa-solid fa-link" aria-hidden="true"></i></div>
+          <span class="project-lang">Java · Spring Boot</span>
+        </div>
+        <h3>Nump</h3>
+        <p>Plataforma de compartilhamento de arquivos e encurtamento de links desenvolvida com Spring Boot. Facilita o envio de arquivos grandes com compactação automática em .zip e geração de links curtos para download.</p>
+        <div class="project-tech">
+          <span class="tech-tag">Java</span>
+          <span class="tech-tag">Spring Boot</span>
+          <span class="tech-tag">REST API</span>
+          <span class="tech-tag">JPA</span>
+        </div>
+        <div class="buttons">
+          <a class="btn" href="https://github.com/xubous/Nump" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>Ver no GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-top">
+          <div class="project-icon blue"><i class="fa-solid fa-cubes" aria-hidden="true"></i></div>
+          <span class="project-lang">C · Utility Library</span>
+        </div>
+        <h3>Lib</h3>
+        <p>Biblioteca utilitária escrita em C para simplificar tarefas comuns de desenvolvimento. Reúne estruturas de dados genéricas, manipulação de strings, leitura de CSV e ferramentas com foco em performance e controle explícito de memória.</p>
+        <div class="project-tech">
+          <span class="tech-tag">C</span>
+          <span class="tech-tag">Data Structures</span>
+          <span class="tech-tag">Memory Mgmt</span>
+          <span class="tech-tag">File I/O</span>
+        </div>
+        <div class="buttons">
+          <a class="btn" href="https://github.com/xubous/Lib" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>Ver no GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-top">
+          <div class="project-icon purple"><i class="fa-brands fa-git-alt" aria-hidden="true"></i></div>
+          <span class="project-lang">Python · CLI</span>
+        </div>
+        <h3>Git Automation Script</h3>
+        <p>Ferramenta Python para automatizar fluxos Git — commits, push, pull — com suporte a múltiplos repositórios simultaneamente. Reduz repetição em pipelines de desenvolvimento e ambientes com muitos repositórios.</p>
+        <div class="project-tech">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">CLI</span>
+          <span class="tech-tag">Git</span>
+          <span class="tech-tag">Automação</span>
+        </div>
+        <div class="buttons">
+          <a class="btn" href="https://github.com/xubous/Git-Automation-Script" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>Ver no GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-top">
+          <div class="project-icon blue"><i class="fa-solid fa-database" aria-hidden="true"></i></div>
+          <span class="project-lang">Java · PostgreSQL</span>
+        </div>
+        <h3>Java PostgreSQL CRUD</h3>
+        <p>Aplicação Java com operações CRUD completas integradas ao PostgreSQL. Inclui padrão DAO, gerenciamento de conexão, tratamento de exceções e servidor web leve com JavaSpark para expor endpoints REST.</p>
+        <div class="project-tech">
+          <span class="tech-tag">Java</span>
+          <span class="tech-tag">PostgreSQL</span>
+          <span class="tech-tag">JavaSpark</span>
+          <span class="tech-tag">DAO Pattern</span>
+        </div>
+        <div class="buttons">
+          <a class="btn" href="https://github.com/xubous/Java-PostgreSQL-CRUD-Integration" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>Ver no GitHub
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =====================
+     CONTACT
+     ===================== -->
+<section id="contact">
+  <div class="wrap">
+
+    <div class="top reveal">
+      <div>
+        <small>CONTATO</small>
+        <h2>Vamos conversar.</h2>
+      </div>
+    </div>
+
+    <div class="contact reveal">
+
+      <div class="info">
+        <p style="color:#c0ccd9; line-height:1.9;">Aberto para oportunidades de estágio, júnior e projetos freelance.</p>
+        <div class="tags" style="margin-top:28px;">
+          <div class="tag">Belo Horizonte</div>
+          <div class="tag">Remoto</div>
+          <div class="tag">Disponível</div>
+        </div>
+        <div style="margin-top:32px; color:#a0b0c4; line-height:2.2; font-family:var(--mono); font-size:13px;">
+          Email: gcs232005@gmail.com<br>
+          GitHub: github.com/xubous
+        </div>
+      </div>
+
+      <div class="form">
+        <form action="https://formspree.io/f/xeolbkaq" method="POST">
+          <input  type="text"  name="name"    placeholder="Seu nome"      required>
+          <input  type="email" name="email"   placeholder="Seu email"     required>
+          <textarea            name="message" placeholder="Sua mensagem"></textarea>
+          <button type="submit">Enviar mensagem</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =====================
+     FOOTER
+     ===================== -->
+<footer class="reveal">
+  <div class="wrap">
+    <p>© 2026 Gabriel Carvalho • Desenvolvido com foco em performance.</p>
+  </div>
+</footer>
+
+<!-- Scripts — deferred para não bloquear o render -->
+<script src="js/main.js" defer></script>
+
 </body>
 </html>
-
-
-
-
