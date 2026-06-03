@@ -307,7 +307,7 @@ nav {
 
 .profile-links {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   border: 1px solid var(--border);
   border-radius: 0 0 12px 12px;
   overflow: hidden;
@@ -635,6 +635,4 @@ footer p { color: var(--muted); font-family: var(--mono); font-size: 11px; }
   body                                { cursor: auto; }
   #cursor                             { display: none; }
   .profile-links                      { grid-template-columns: repeat(3, 1fr); }
-  .profile-links .plink:nth-child(4),
-  .profile-links .plink:nth-child(5)  { border-top: 1px solid var(--border); }
 }
