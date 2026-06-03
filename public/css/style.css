@@ -307,7 +307,7 @@ nav {
 
 .profile-links {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   border: 1px solid var(--border);
   border-radius: 0 0 12px 12px;
   overflow: hidden;
